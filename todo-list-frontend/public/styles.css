@@ -67,6 +67,7 @@ body{
 
 }
 .task-item{
+    display:flex;
     background-color:rgb(255, 255, 255);
     margin:5px 10px 0 15px;
     border-radius: 5px;
@@ -90,6 +91,11 @@ body{
   
 }
 
+.task-text{
+    display:flex;
+    flex-grow:1;
+}
+
 .task-button{
     position:absolute;
     bottom:1%;
@@ -98,9 +104,15 @@ body{
     border-radius:50%;
     height:50px;
     width:50px;
+    border-style:none;
     background-color:#2d4bb8;
     color:white;
     transition: all 0.5s;
+}
+
+.delete-task{
+    margin-right:10px;
+    margin-bottom:5px;   
 }
 
 .list-button{
@@ -108,6 +120,7 @@ body{
     height: 45px;
     background-color:#2d4bb8;
     color:white;
+    border-style:none;
     font-size:12pt;
     transition: all 0.5s;
 }
