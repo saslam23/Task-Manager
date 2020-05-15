@@ -1,0 +1,136 @@
+body{
+    background-color:#303c96 !important;
+}
+
+#main {
+    margin-left:3rem;
+    width:100%;
+    height:80vh;
+    max-width: 1000px;
+    max-height: 800px;
+}
+
+
+.sidebar{
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+    background-color:white;
+    font-size:20pt;
+    color:#344ea9;
+    width:250px;
+    height:700px;
+
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.list-menu{
+    display:flex;
+    flex-direction: column;
+    flex-grow:.9;
+    margin:20px 15px 0 15px;
+}
+
+.list-item{
+    text-align: center;
+    font-size:15pt;
+    transition: all 0.5s ease;
+    padding-top:8px;
+}
+.list-item:hover{
+    border-radius: 5px;
+    background-color:#546dca;
+    color:white;
+    cursor: pointer;
+    opacity: .8;
+    
+}
+
+.is-active{
+    background-color:#546dca;
+    color:white;
+    border-radius: 5px;
+    opacity: .8;
+}
+
+.tasks{
+    position:relative;
+    background-color:rgb(245, 245, 245);
+    color:#344ea9;
+    width:750px;
+    height:auto;
+
+
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+.task-item{
+    background-color:rgb(255, 255, 255);
+    margin:5px 10px 0 15px;
+    border-radius: 5px;
+    padding: 10px 0 0 5px;
+    text-align: left;
+    font-size: 15pt;
+    transition: all 0.5s;
+    height:50px;
+    width:90%;
+}
+.task-item:active{
+    transform:scale(.95);
+}
+.complete{
+    text-decoration:line-through;
+}
+
+.task-item:hover{
+    box-shadow: 0px 0px 10px 0px;
+    cursor: pointer;
+  
+}
+
+.task-button{
+    position:absolute;
+    bottom:1%;
+    right:1%;
+    font-size:25pt;
+    border-radius:50%;
+    height:50px;
+    width:50px;
+    background-color:#2d4bb8;
+    color:white;
+    transition: all 0.5s;
+}
+
+.list-button{
+    width:70%;
+    height: 45px;
+    background-color:#2d4bb8;
+    color:white;
+    font-size:12pt;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color:#556ec7;
+}
+
+#new-list{
+    text-align:center;
+    margin:0;
+}
+
+.create-box{
+    background-color: white;
+    width: 600px;
+    height:275px;
+}
+
+.modal-button{
+    width:150px;
+    margin-left:5px;
+}
+
+input{
+    width:80%;
+}
